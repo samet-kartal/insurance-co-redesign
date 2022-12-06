@@ -26,6 +26,7 @@
   border-bottom: 1px solid #eaeaea;
   border-radius: 0px;
   outline: none;
+  width: 100%;
 }
 
 .searchIcon {
@@ -33,4 +34,50 @@
   height: auto;
   fill: #eaeaea;
   margin-right: 12px;
+}
+
+.autocompleteContainer {
+  width: 720px;
+  max-width: 80%;
+  position: absolute;
+  top: 80px;
+  height: 768px;
+  overflow: auto;
+  max-height: 75%;
+}
+
+.autocompleteRow {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  cursor: pointer;
+
+  &:nth-child(odd) {
+    background-color: #f7f7f7;
+  }
+  &:nth-child(even) {
+    background-color: #e8e8e8;
+  }
+}
+
+.autocompleteRowHeaderText {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.autocompleteRowSubInfoContainer {
+  display: flex;
+  align-items: center;
+
+  & > * {
+    flex: 1;
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

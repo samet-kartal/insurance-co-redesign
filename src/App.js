@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Header from './layouts/header';
 
 function App() {
-  const [selectedRowData, setSelectedRowData] = useState(null);
+  const [selectedRowData, setSelectedRowData] = useState();
   return (
     <div>
       <Header setSelectedRowData={setSelectedRowData} />

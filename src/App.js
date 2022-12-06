@@ -16,10 +16,9 @@ function App() {
           marginTop: 32,
         }}
       >
-        {JSON.stringify(selectedRowData, null, 2)}
       </code>
     </div>
-  );
+  )
 }
 
 export default App;

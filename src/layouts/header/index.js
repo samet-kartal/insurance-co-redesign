@@ -51,7 +51,7 @@ function Header({ setSelectedRowData }) {
             </div>
           ))}
         </div>
-      ) : null}
+      ) :<div></div>}
     </header>
   );
 }

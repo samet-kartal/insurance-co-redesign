@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Getting Started with Install node.js
+
+https://nodejs.org/en/download/
+
+# After that create react app
+
+npx create-react-app my-app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
